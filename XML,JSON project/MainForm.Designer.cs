@@ -32,16 +32,21 @@
             this.splitterL = new System.Windows.Forms.Splitter();
             this.TabControlMenu = new System.Windows.Forms.TabControl();
             this.LoadInfo = new System.Windows.Forms.TabPage();
-            this.JSONfile = new System.Windows.Forms.RadioButton();
-            this.XMLfile = new System.Windows.Forms.RadioButton();
+            this.ConfirmButton = new System.Windows.Forms.Button();
+            this.Process345json = new System.Windows.Forms.RadioButton();
+            this.Process1234json = new System.Windows.Forms.RadioButton();
+            this.Process123xml = new System.Windows.Forms.RadioButton();
+            this.Process228xml = new System.Windows.Forms.RadioButton();
+            this.Process18223json = new System.Windows.Forms.RadioButton();
+            this.Process322xml = new System.Windows.Forms.RadioButton();
             this.ShowInfo = new System.Windows.Forms.TabPage();
-            this.MainList = new System.Windows.Forms.ListView();
-            this.fullName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Status = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Process = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Age = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.MainList = new System.Windows.Forms.DataGridView();
             this.CloseApp = new System.Windows.Forms.TabPage();
             this.splitterR = new System.Windows.Forms.Splitter();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -49,6 +54,7 @@
             this.TabControlMenu.SuspendLayout();
             this.LoadInfo.SuspendLayout();
             this.ShowInfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.MainList)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -102,8 +108,13 @@
             // LoadInfo
             // 
             this.LoadInfo.BackColor = System.Drawing.SystemColors.Window;
-            this.LoadInfo.Controls.Add(this.JSONfile);
-            this.LoadInfo.Controls.Add(this.XMLfile);
+            this.LoadInfo.Controls.Add(this.ConfirmButton);
+            this.LoadInfo.Controls.Add(this.Process345json);
+            this.LoadInfo.Controls.Add(this.Process1234json);
+            this.LoadInfo.Controls.Add(this.Process123xml);
+            this.LoadInfo.Controls.Add(this.Process228xml);
+            this.LoadInfo.Controls.Add(this.Process18223json);
+            this.LoadInfo.Controls.Add(this.Process322xml);
             this.LoadInfo.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LoadInfo.Location = new System.Drawing.Point(4, 34);
             this.LoadInfo.Name = "LoadInfo";
@@ -112,28 +123,80 @@
             this.LoadInfo.TabIndex = 0;
             this.LoadInfo.Text = "Загрузить материалы";
             // 
-            // JSONfile
+            // ConfirmButton
             // 
-            this.JSONfile.AutoSize = true;
-            this.JSONfile.Location = new System.Drawing.Point(22, 63);
-            this.JSONfile.Name = "JSONfile";
-            this.JSONfile.Size = new System.Drawing.Size(314, 22);
-            this.JSONfile.TabIndex = 1;
-            this.JSONfile.TabStop = true;
-            this.JSONfile.Text = "Дело № 18223 (загрузка с JSON-файла)";
-            this.JSONfile.UseVisualStyleBackColor = true;
+            this.ConfirmButton.Location = new System.Drawing.Point(531, 370);
+            this.ConfirmButton.Name = "ConfirmButton";
+            this.ConfirmButton.Size = new System.Drawing.Size(89, 30);
+            this.ConfirmButton.TabIndex = 6;
+            this.ConfirmButton.Text = "Загрузить";
+            this.ConfirmButton.UseVisualStyleBackColor = true;
             // 
-            // XMLfile
+            // Process345json
             // 
-            this.XMLfile.AutoSize = true;
-            this.XMLfile.Location = new System.Drawing.Point(22, 34);
-            this.XMLfile.Name = "XMLfile";
-            this.XMLfile.Size = new System.Drawing.Size(290, 22);
-            this.XMLfile.TabIndex = 0;
-            this.XMLfile.TabStop = true;
-            this.XMLfile.Text = "Дело № 322 (загрузка с XML-файла)";
-            this.XMLfile.UseVisualStyleBackColor = true;
-            this.XMLfile.CheckedChanged += new System.EventHandler(this.XMLfile_CheckedChanged);
+            this.Process345json.AutoSize = true;
+            this.Process345json.Location = new System.Drawing.Point(22, 174);
+            this.Process345json.Name = "Process345json";
+            this.Process345json.Size = new System.Drawing.Size(298, 22);
+            this.Process345json.TabIndex = 5;
+            this.Process345json.TabStop = true;
+            this.Process345json.Text = "Дело № 345 (загрузка с JSON-файла)";
+            this.Process345json.UseVisualStyleBackColor = true;
+            // 
+            // Process1234json
+            // 
+            this.Process1234json.AutoSize = true;
+            this.Process1234json.Location = new System.Drawing.Point(22, 146);
+            this.Process1234json.Name = "Process1234json";
+            this.Process1234json.Size = new System.Drawing.Size(306, 22);
+            this.Process1234json.TabIndex = 4;
+            this.Process1234json.TabStop = true;
+            this.Process1234json.Text = "Дело № 1234 (загрузка с JSON-файла)";
+            this.Process1234json.UseVisualStyleBackColor = true;
+            // 
+            // Process123xml
+            // 
+            this.Process123xml.AutoSize = true;
+            this.Process123xml.Location = new System.Drawing.Point(22, 90);
+            this.Process123xml.Name = "Process123xml";
+            this.Process123xml.Size = new System.Drawing.Size(290, 22);
+            this.Process123xml.TabIndex = 3;
+            this.Process123xml.TabStop = true;
+            this.Process123xml.Text = "Дело № 123 (загрузка с XML-файла)";
+            this.Process123xml.UseVisualStyleBackColor = true;
+            // 
+            // Process228xml
+            // 
+            this.Process228xml.AutoSize = true;
+            this.Process228xml.Location = new System.Drawing.Point(22, 62);
+            this.Process228xml.Name = "Process228xml";
+            this.Process228xml.Size = new System.Drawing.Size(290, 22);
+            this.Process228xml.TabIndex = 2;
+            this.Process228xml.TabStop = true;
+            this.Process228xml.Text = "Дело № 228 (загрузка с XML-файла)";
+            this.Process228xml.UseVisualStyleBackColor = true;
+            // 
+            // Process18223json
+            // 
+            this.Process18223json.AutoSize = true;
+            this.Process18223json.Location = new System.Drawing.Point(22, 118);
+            this.Process18223json.Name = "Process18223json";
+            this.Process18223json.Size = new System.Drawing.Size(314, 22);
+            this.Process18223json.TabIndex = 1;
+            this.Process18223json.TabStop = true;
+            this.Process18223json.Text = "Дело № 18223 (загрузка с JSON-файла)";
+            this.Process18223json.UseVisualStyleBackColor = true;
+            // 
+            // Process322xml
+            // 
+            this.Process322xml.AutoSize = true;
+            this.Process322xml.Location = new System.Drawing.Point(22, 34);
+            this.Process322xml.Name = "Process322xml";
+            this.Process322xml.Size = new System.Drawing.Size(290, 22);
+            this.Process322xml.TabIndex = 0;
+            this.Process322xml.TabStop = true;
+            this.Process322xml.Text = "Дело № 322 (загрузка с XML-файла)";
+            this.Process322xml.UseVisualStyleBackColor = true;
             // 
             // ShowInfo
             // 
@@ -149,42 +212,23 @@
             // 
             // MainList
             // 
-            this.MainList.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.MainList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.fullName,
+            this.MainList.AllowUserToAddRows = false;
+            this.MainList.AllowUserToResizeColumns = false;
+            this.MainList.AllowUserToResizeRows = false;
+            this.MainList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.MainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name,
+            this.age,
             this.Status,
-            this.Process,
-            this.Age});
-            this.MainList.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MainList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.MainList.HideSelection = false;
-            this.MainList.Location = new System.Drawing.Point(-4, 0);
+            this.Process});
+            this.MainList.Location = new System.Drawing.Point(0, 0);
+            this.MainList.MultiSelect = false;
             this.MainList.Name = "MainList";
-            this.MainList.Size = new System.Drawing.Size(264, 406);
+            this.MainList.RowHeadersVisible = false;
+            this.MainList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.MainList.Size = new System.Drawing.Size(588, 410);
             this.MainList.TabIndex = 0;
-            this.MainList.UseCompatibleStateImageBehavior = false;
-            this.MainList.View = System.Windows.Forms.View.Details;
-            // 
-            // fullName
-            // 
-            this.fullName.Text = "Имя";
-            // 
-            // Status
-            // 
-            this.Status.Text = "Статус";
-            this.Status.Width = 72;
-            // 
-            // Process
-            // 
-            this.Process.Text = "Дело №";
-            // 
-            // Age
-            // 
-            this.Age.Text = "Возраст";
-            this.Age.Width = 68;
+            this.MainList.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.MainList_CellMouseDoubleClick);
             // 
             // CloseApp
             // 
@@ -206,6 +250,38 @@
             this.splitterR.TabIndex = 0;
             this.splitterR.TabStop = false;
             // 
+            // name
+            // 
+            this.name.HeaderText = "Имя";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
+            this.name.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.name.Width = 200;
+            // 
+            // age
+            // 
+            this.age.HeaderText = "Возраст";
+            this.age.Name = "age";
+            this.age.ReadOnly = true;
+            this.age.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.age.Width = 65;
+            // 
+            // Status
+            // 
+            this.Status.HeaderText = "Статус";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Status.Width = 250;
+            // 
+            // Process
+            // 
+            this.Process.HeaderText = "Дело №";
+            this.Process.Name = "Process";
+            this.Process.ReadOnly = true;
+            this.Process.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Process.Width = 70;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -224,6 +300,7 @@
             this.LoadInfo.ResumeLayout(false);
             this.LoadInfo.PerformLayout();
             this.ShowInfo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.MainList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -237,13 +314,18 @@
         private System.Windows.Forms.TabPage LoadInfo;
         private System.Windows.Forms.TabPage ShowInfo;
         private System.Windows.Forms.TabPage CloseApp;
-        private System.Windows.Forms.RadioButton JSONfile;
-        private System.Windows.Forms.RadioButton XMLfile;
-        private System.Windows.Forms.ListView MainList;
-        private System.Windows.Forms.ColumnHeader fullName;
-        private System.Windows.Forms.ColumnHeader Status;
-        private System.Windows.Forms.ColumnHeader Process;
-        private System.Windows.Forms.ColumnHeader Age;
+        private System.Windows.Forms.RadioButton Process18223json;
+        private System.Windows.Forms.RadioButton Process322xml;
+        private System.Windows.Forms.RadioButton Process228xml;
+        private System.Windows.Forms.RadioButton Process345json;
+        private System.Windows.Forms.RadioButton Process1234json;
+        private System.Windows.Forms.RadioButton Process123xml;
+        private System.Windows.Forms.Button ConfirmButton;
+        private System.Windows.Forms.DataGridView MainList;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn age;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Process;
     }
 }
 

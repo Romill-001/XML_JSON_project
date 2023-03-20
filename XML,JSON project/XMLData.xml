@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mainroot>
+	<judges>
+		<j1>
+			<fio>
+				Иванов<name>Иван</name>Иванович
+			</fio>
+			<age>
+				56<year>1967</year>
+			</age>
+			<status>Высший Судья</status>
+			<place>Верховный суд г.Казани</place>
+			<process>322</process>
+			<experience>20</experience>
+		</j1>
+		<j2>
+			<fio>
+				Амирханов<name>Илья</name>Сергеевич
+			</fio>
+			<age>
+				49<year>1974</year>
+			</age>
+			<status>Судья</status>
+			<place>Районный суд г.Казани</place>
+			<process>228</process>
+			<experience>15</experience>
+		</j2>
+		<j3>
+			<fio>
+				Фролов<name>Юрий</name>Маратович
+			</fio>
+			<age>
+				43<year>1980</year>
+			</age>
+			<status>Младший Судья</status>
+			<place>Городской суд</place>
+			<process>123</process>
+			<experience>10</experience>
+		</j3>
+	</judges>
+	<defendants>
+		<d1>
+			<fio>
+				Зиганшин<name>Халиль</name>Арамзанзанович
+			</fio>
+			<age>
+				23<year>2000</year>
+			</age>
+			<status>Подозреваемый</status>
+			<place>Верховный суд г.Казани</place>
+			<process>322</process>
+			<article>101</article>
+			<lawyer>
+				Власов<name>Павел</name>Иванович
+			</lawyer>
+		</d1>
+		<d2>
+			<fio>
+				Калашников<name>Андрей</name>Бебрович
+			</fio>
+			<age>
+				40<year>1983</year>
+			</age>
+			<status>Подозреваемый(Бывший вор)</status>
+			<place>Районный суд г.Казани</place>
+			<process>228</process>
+			<article>120</article>
+			<lawyer>
+				Сулейманов<name>Пётр</name>Дмитриевич
+			</lawyer>
+		</d2>
+		<d3>
+			<fio>
+				Романов<name>Илья</name>Игоревич
+			</fio>
+			<age>
+				20<year>2003</year>
+			</age>
+			<status>Подозреваемый(Мелкий преступник)</status>
+			<place>Городской суд</place>
+			<process>123</process>
+			<article>201</article>
+			<lawyer>
+				Солодов<name>Александр</name>Артёмович
+			</lawyer>
+		</d3>
+	</defendants>
+	<victims>
+		<v1>
+			<fio>
+				Назарбаев<name>Рамиль</name>Раилевич
+			</fio>
+			<age>
+				41<year>1983</year>
+			</age>
+			<status>Пострадавший</status>
+			<place>Верховный суд г.Казани</place>
+			<process>322</process>
+			<damage>Украли 1 млн. р.</damage>
+		</v1>
+		<v2>
+			<fio>
+				Нурмиева<name>Милана</name>Александрова
+			</fio>
+			<age>
+				21<year>2002</year>
+			</age>
+			<status>Пострадавшая</status>
+			<place>Районный суд г.Казани</place>
+			<process>228</process>
+			<damage>Украли и перепродали кота</damage>
+		</v2>
+		<v3>
+			<fio>
+				Фаррахова<name>Лейсан</name>Фазиловна
+			</fio>
+			<age>
+				18<year>2004</year>
+			</age>
+			<status>Пострадавшая</status>
+			<place>Городской суд</place>
+			<process>123</process>
+			<damage>Украли мобильный телефон и кошелёк</damage>
+		</v3>
+	</victims>
+	
+</mainroot>
