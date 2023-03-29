@@ -41,12 +41,12 @@
             this.Process322xml = new System.Windows.Forms.RadioButton();
             this.ShowInfo = new System.Windows.Forms.TabPage();
             this.MainList = new System.Windows.Forms.DataGridView();
-            this.CloseApp = new System.Windows.Forms.TabPage();
-            this.splitterR = new System.Windows.Forms.Splitter();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CloseApp = new System.Windows.Forms.TabPage();
+            this.splitterR = new System.Windows.Forms.Splitter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -131,6 +131,7 @@
             this.ConfirmButton.TabIndex = 6;
             this.ConfirmButton.Text = "Загрузить";
             this.ConfirmButton.UseVisualStyleBackColor = true;
+            this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
             // Process345json
             // 
@@ -164,6 +165,7 @@
             this.Process123xml.TabStop = true;
             this.Process123xml.Text = "Дело № 123 (загрузка с XML-файла)";
             this.Process123xml.UseVisualStyleBackColor = true;
+            this.Process123xml.CheckedChanged += new System.EventHandler(this.Process123xml_CheckedChanged);
             // 
             // Process228xml
             // 
@@ -175,6 +177,7 @@
             this.Process228xml.TabStop = true;
             this.Process228xml.Text = "Дело № 228 (загрузка с XML-файла)";
             this.Process228xml.UseVisualStyleBackColor = true;
+            this.Process228xml.CheckedChanged += new System.EventHandler(this.Process228xml_CheckedChanged);
             // 
             // Process18223json
             // 
@@ -197,6 +200,7 @@
             this.Process322xml.TabStop = true;
             this.Process322xml.Text = "Дело № 322 (загрузка с XML-файла)";
             this.Process322xml.UseVisualStyleBackColor = true;
+            this.Process322xml.CheckedChanged += new System.EventHandler(this.Process322xml_CheckedChanged);
             // 
             // ShowInfo
             // 
@@ -215,6 +219,7 @@
             this.MainList.AllowUserToAddRows = false;
             this.MainList.AllowUserToResizeColumns = false;
             this.MainList.AllowUserToResizeRows = false;
+            this.MainList.BackgroundColor = System.Drawing.SystemColors.Window;
             this.MainList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.name,
@@ -228,27 +233,7 @@
             this.MainList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.MainList.Size = new System.Drawing.Size(588, 410);
             this.MainList.TabIndex = 0;
-            this.MainList.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.MainList_CellMouseDoubleClick);
-            // 
-            // CloseApp
-            // 
-            this.CloseApp.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CloseApp.Location = new System.Drawing.Point(4, 34);
-            this.CloseApp.Name = "CloseApp";
-            this.CloseApp.Size = new System.Drawing.Size(626, 406);
-            this.CloseApp.TabIndex = 2;
-            this.CloseApp.Text = "Закрыть";
-            this.CloseApp.UseVisualStyleBackColor = true;
-            // 
-            // splitterR
-            // 
-            this.splitterR.BackColor = System.Drawing.Color.MediumOrchid;
-            this.splitterR.Enabled = false;
-            this.splitterR.Location = new System.Drawing.Point(0, 0);
-            this.splitterR.Name = "splitterR";
-            this.splitterR.Size = new System.Drawing.Size(4, 450);
-            this.splitterR.TabIndex = 0;
-            this.splitterR.TabStop = false;
+            this.MainList.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MainList_CellContentDoubleClick);
             // 
             // name
             // 
@@ -282,6 +267,26 @@
             this.Process.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Process.Width = 70;
             // 
+            // CloseApp
+            // 
+            this.CloseApp.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CloseApp.Location = new System.Drawing.Point(4, 34);
+            this.CloseApp.Name = "CloseApp";
+            this.CloseApp.Size = new System.Drawing.Size(626, 406);
+            this.CloseApp.TabIndex = 2;
+            this.CloseApp.Text = "Закрыть";
+            this.CloseApp.UseVisualStyleBackColor = true;
+            // 
+            // splitterR
+            // 
+            this.splitterR.BackColor = System.Drawing.Color.MediumOrchid;
+            this.splitterR.Enabled = false;
+            this.splitterR.Location = new System.Drawing.Point(0, 0);
+            this.splitterR.Name = "splitterR";
+            this.splitterR.Size = new System.Drawing.Size(4, 450);
+            this.splitterR.TabIndex = 0;
+            this.splitterR.TabStop = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,7 +296,7 @@
             this.Controls.Add(this.splitContainer1);
             this.MinimumSize = new System.Drawing.Size(817, 480);
             this.Name = "MainForm";
-            this.Text = "Судебное бюро";
+            this.Text = "Судебное разбирательства";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -320,12 +325,12 @@
         private System.Windows.Forms.RadioButton Process345json;
         private System.Windows.Forms.RadioButton Process1234json;
         private System.Windows.Forms.RadioButton Process123xml;
-        private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.DataGridView MainList;
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.DataGridViewTextBoxColumn age;
         private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn Process;
+        private System.Windows.Forms.Button ConfirmButton;
     }
 }
 
