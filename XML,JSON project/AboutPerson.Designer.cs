@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.usersPicture = new System.Windows.Forms.PictureBox();
             this.fullName = new System.Windows.Forms.Label();
             this.Age = new System.Windows.Forms.Label();
             this.Status = new System.Windows.Forms.Label();
@@ -37,16 +37,17 @@
             this.Temp = new System.Windows.Forms.Label();
             this.Place = new System.Windows.Forms.Label();
             this.Lawyer = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // usersPicture
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 144);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.usersPicture.Image = global::XML_JSON_project.Properties.Resources.icons8_user_account_100;
+            this.usersPicture.Location = new System.Drawing.Point(44, 37);
+            this.usersPicture.Name = "usersPicture";
+            this.usersPicture.Size = new System.Drawing.Size(100, 100);
+            this.usersPicture.TabIndex = 0;
+            this.usersPicture.TabStop = false;
             // 
             // fullName
             // 
@@ -133,7 +134,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 446);
+            this.BackColor = System.Drawing.SystemColors.Window;
+            this.ClientSize = new System.Drawing.Size(726, 418);
             this.Controls.Add(this.Lawyer);
             this.Controls.Add(this.Place);
             this.Controls.Add(this.Temp);
@@ -142,12 +144,14 @@
             this.Controls.Add(this.Status);
             this.Controls.Add(this.Age);
             this.Controls.Add(this.fullName);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.usersPicture);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(742, 457);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(742, 457);
             this.Name = "AboutPerson";
             this.Text = "Профиль";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,7 +159,7 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox usersPicture;
         private System.Windows.Forms.Label fullName;
         private System.Windows.Forms.Label Age;
         private System.Windows.Forms.Label Status;

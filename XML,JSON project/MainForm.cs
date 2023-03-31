@@ -42,6 +42,8 @@ namespace XML_JSON_project
             ParseDefendants(root);
             ParseVictims(root);
             ParseJudgesjson();
+            ParseDefendantsjson();
+            ParseVictimsjson();
         }
         private void ParseJudges(XmlElement root)
         {
@@ -185,16 +187,17 @@ namespace XML_JSON_project
             JsonNode data = JsonNode.Parse(data_json);
             for (int i = 0; i < 3; i++)
             {
-                People j = new People();
-                JsonNode jud = data["defendants"][i];
-                j.Name = $"{(string)jud["fio"]["surname"]} {(string)jud["fio"]["name"]} {(string)jud["fio"]["fathername"]}";
-                j.Age = int.Parse((string)jud["age"]["age"]);
-                j.Place = (string)jud["place"];
-                j.Process = int.Parse((string)jud["process"]);
-                j.Experience = int.Parse((string)jud["experience"]);
-                j.Year = int.Parse((string)jud["age"]["year"]);
-                j.Status = (string)jud["status"];
-                List.Add(j);
+                People d = new People();
+                JsonNode def = data["defendants"][i];
+                d.Name = $"{(string)def["fio"]["surname"]} {(string)def["fio"]["name"]} {(string)def["fio"]["fathername"]}";
+                d.Age = int.Parse((string)def["age"]["age"]);
+                d.Place = (string)def["place"];
+                d.Process = int.Parse((string)def["process"]);
+                d.Year = int.Parse((string)def["age"]["year"]);
+                d.Status = (string)def["status"];
+                d.Article = int.Parse((string)def["article"]);
+                d.Lawyer = (string)def["lawyer"];
+                List.Add(d);
             }
         }
         private void ParseVictimsjson()
@@ -202,16 +205,16 @@ namespace XML_JSON_project
             JsonNode data = JsonNode.Parse(data_json);
             for (int i = 0; i < 3; i++)
             {
-                People j = new People();
-                JsonNode jud = data["victims"][i];
-                j.Name = $"{(string)jud["fio"]["surname"]} {(string)jud["fio"]["name"]} {(string)jud["fio"]["fathername"]}";
-                j.Age = int.Parse((string)jud["age"]["age"]);
-                j.Place = (string)jud["place"];
-                j.Process = int.Parse((string)jud["process"]);
-                j.Experience = int.Parse((string)jud["experience"]);
-                j.Year = int.Parse((string)jud["age"]["year"]);
-                j.Status = (string)jud["status"];
-                List.Add(j);
+                People v = new People();
+                JsonNode vic = data["victims"][i];
+                v.Name = $"{(string)vic["fio"]["surname"]} {(string)vic["fio"]["name"]} {(string)vic["fio"]["fathername"]}";
+                v.Age = int.Parse((string)vic["age"]["age"]);
+                v.Place = (string)vic["place"];
+                v.Process = int.Parse((string)vic["process"]);
+                v.Year = int.Parse((string)vic["age"]["year"]);
+                v.Status = (string)vic["status"];
+                v.Damage = (string)vic["damage"];
+                List.Add(v);
             }
         }
         private void LoadToDG(List<People> list)
@@ -223,7 +226,7 @@ namespace XML_JSON_project
         }
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            if (Process322xml.Checked || Process228xml.Checked || Process123xml.Checked)
+            if (Process322xml.Checked || Process228xml.Checked || Process123xml.Checked || Process18223json.Checked || Process1234json.Checked || Process345json.Checked)
             {
                 for (int i = 0; i < MainList.Rows.Count; i++)
                 {
@@ -251,7 +254,18 @@ namespace XML_JSON_project
         {
             process = "123";
         }
-
+        private void Process18223json_CheckedChanged(object sender, EventArgs e)
+        {
+            process = "18223";
+        }
+        private void Process1234json_CheckedChanged(object sender, EventArgs e)
+        {
+            process = "1234";
+        }
+        private void Process345json_CheckedChanged(object sender, EventArgs e)
+        {
+            process = "345";
+        }
         private void MainList_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             AboutPerson per = new AboutPerson();
@@ -285,6 +299,11 @@ namespace XML_JSON_project
                 ans = $"Ущерб: {List[num].Damage}";
             }
             return ans;
+        }
+
+        private void closeButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 
