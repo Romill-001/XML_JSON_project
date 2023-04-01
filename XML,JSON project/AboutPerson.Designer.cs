@@ -43,7 +43,7 @@
             // usersPicture
             // 
             this.usersPicture.Image = global::XML_JSON_project.Properties.Resources.icons8_user_account_100;
-            this.usersPicture.Location = new System.Drawing.Point(44, 37);
+            this.usersPicture.Location = new System.Drawing.Point(44, 56);
             this.usersPicture.Name = "usersPicture";
             this.usersPicture.Size = new System.Drawing.Size(100, 100);
             this.usersPicture.TabIndex = 0;
@@ -52,8 +52,9 @@
             // fullName
             // 
             this.fullName.AutoSize = true;
+            this.fullName.BackColor = System.Drawing.SystemColors.Control;
             this.fullName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.fullName.Location = new System.Drawing.Point(201, 12);
+            this.fullName.Location = new System.Drawing.Point(200, 56);
             this.fullName.Name = "fullName";
             this.fullName.Size = new System.Drawing.Size(61, 24);
             this.fullName.TabIndex = 1;
@@ -62,8 +63,9 @@
             // Age
             // 
             this.Age.AutoSize = true;
+            this.Age.BackColor = System.Drawing.SystemColors.Control;
             this.Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Age.Location = new System.Drawing.Point(205, 77);
+            this.Age.Location = new System.Drawing.Point(201, 115);
             this.Age.Name = "Age";
             this.Age.Size = new System.Drawing.Size(45, 24);
             this.Age.TabIndex = 2;
@@ -72,8 +74,9 @@
             // Status
             // 
             this.Status.AutoSize = true;
+            this.Status.BackColor = System.Drawing.SystemColors.Control;
             this.Status.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Status.Location = new System.Drawing.Point(205, 132);
+            this.Status.Location = new System.Drawing.Point(201, 178);
             this.Status.Name = "Status";
             this.Status.Size = new System.Drawing.Size(60, 24);
             this.Status.TabIndex = 3;
@@ -82,8 +85,9 @@
             // YearOfBirth
             // 
             this.YearOfBirth.AutoSize = true;
+            this.YearOfBirth.BackColor = System.Drawing.SystemColors.Control;
             this.YearOfBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.YearOfBirth.Location = new System.Drawing.Point(289, 77);
+            this.YearOfBirth.Location = new System.Drawing.Point(325, 115);
             this.YearOfBirth.Name = "YearOfBirth";
             this.YearOfBirth.Size = new System.Drawing.Size(110, 24);
             this.YearOfBirth.TabIndex = 4;
@@ -92,8 +96,9 @@
             // Process
             // 
             this.Process.AutoSize = true;
+            this.Process.BackColor = System.Drawing.SystemColors.Control;
             this.Process.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Process.Location = new System.Drawing.Point(12, 178);
+            this.Process.Location = new System.Drawing.Point(40, 178);
             this.Process.Name = "Process";
             this.Process.Size = new System.Drawing.Size(78, 24);
             this.Process.TabIndex = 5;
@@ -102,8 +107,9 @@
             // Temp
             // 
             this.Temp.AutoSize = true;
+            this.Temp.BackColor = System.Drawing.SystemColors.Control;
             this.Temp.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Temp.Location = new System.Drawing.Point(12, 302);
+            this.Temp.Location = new System.Drawing.Point(40, 303);
             this.Temp.Name = "Temp";
             this.Temp.Size = new System.Drawing.Size(108, 24);
             this.Temp.TabIndex = 6;
@@ -112,8 +118,9 @@
             // Place
             // 
             this.Place.AutoSize = true;
+            this.Place.BackColor = System.Drawing.SystemColors.Control;
             this.Place.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Place.Location = new System.Drawing.Point(12, 240);
+            this.Place.Location = new System.Drawing.Point(40, 244);
             this.Place.Name = "Place";
             this.Place.Size = new System.Drawing.Size(57, 24);
             this.Place.TabIndex = 7;
@@ -122,8 +129,9 @@
             // Lawyer
             // 
             this.Lawyer.AutoSize = true;
+            this.Lawyer.BackColor = System.Drawing.SystemColors.Control;
             this.Lawyer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Lawyer.Location = new System.Drawing.Point(12, 359);
+            this.Lawyer.Location = new System.Drawing.Point(40, 362);
             this.Lawyer.Name = "Lawyer";
             this.Lawyer.Size = new System.Drawing.Size(16, 24);
             this.Lawyer.TabIndex = 8;
@@ -134,8 +142,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(726, 418);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(726, 421);
             this.Controls.Add(this.Lawyer);
             this.Controls.Add(this.Place);
             this.Controls.Add(this.Temp);
@@ -146,10 +154,11 @@
             this.Controls.Add(this.fullName);
             this.Controls.Add(this.usersPicture);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(742, 457);
+            this.MaximumSize = new System.Drawing.Size(742, 460);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(742, 457);
+            this.MinimumSize = new System.Drawing.Size(742, 460);
             this.Name = "AboutPerson";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Профиль";
             ((System.ComponentModel.ISupportInitialize)(this.usersPicture)).EndInit();
             this.ResumeLayout(false);

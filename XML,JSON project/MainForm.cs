@@ -272,10 +272,10 @@ namespace XML_JSON_project
             num = MainList.CurrentCell.RowIndex;
             per.name = $"Имя: {List[num].Name}.";
             per.place = $"Место проведения заседания: {List[num].Place}.";
-            per.year = $"{List[num].Year} года рождения.";
+            per.year = $"Год рождения: {List[num].Year}.";
             per.status = $"Статус: {List[num].Status}.";
             per.process = $"Дело №{List[num].Process}.";
-            per.age = $"{List[num].Age} лет.";
+            per.age = $"Возраст: {List[num].Age}.";
             per.temp = Tempr(List, num);
             if (List[num].Lawyer != null)
             {
