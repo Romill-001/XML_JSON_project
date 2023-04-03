@@ -63,6 +63,16 @@ namespace XML_JSON_project.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_scales_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-scales-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_user_account_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-user-account-100", resourceCulture);

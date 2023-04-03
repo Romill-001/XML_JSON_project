@@ -46,6 +46,13 @@
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Process = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tree = new System.Windows.Forms.TabPage();
+            this.temp2Label = new System.Windows.Forms.Label();
+            this.temp1Label = new System.Windows.Forms.Label();
+            this.processLabel = new System.Windows.Forms.Label();
+            this.placeLabel = new System.Windows.Forms.Label();
+            this.yearLabel = new System.Windows.Forms.Label();
+            this.ageLabel = new System.Windows.Forms.Label();
+            this.nameLabel = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.судьиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process322jud = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,44 +66,39 @@
             this.process1234jud = new System.Windows.Forms.ToolStripMenuItem();
             this.комиссаровЛевМихайловичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process345jud = new System.Windows.Forms.ToolStripMenuItem();
+            this.львовЯнМаксимовичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.подозреваемыеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process322def = new System.Windows.Forms.ToolStripMenuItem();
+            this.зиганшинХалильАрамзанзановичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process228def = new System.Windows.Forms.ToolStripMenuItem();
+            this.калашниковАндрейБебровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process123def = new System.Windows.Forms.ToolStripMenuItem();
+            this.романовИльяИгоревичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process18223def = new System.Windows.Forms.ToolStripMenuItem();
+            this.серебряковВладимирВасильевичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process1234def = new System.Windows.Forms.ToolStripMenuItem();
+            this.тихоновЛевЕгоровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process345def = new System.Windows.Forms.ToolStripMenuItem();
+            this.мухинДанилаАртёмовичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.пострадавшиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process322vic = new System.Windows.Forms.ToolStripMenuItem();
+            this.назарбаевРамильРавилевичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process228vic = new System.Windows.Forms.ToolStripMenuItem();
+            this.нурмиеваМиланаАлександроваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process123vic = new System.Windows.Forms.ToolStripMenuItem();
+            this.фарраховаЛейсанФазиловнаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process18223vic = new System.Windows.Forms.ToolStripMenuItem();
+            this.морзовАлександрАлександровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process1234vic = new System.Windows.Forms.ToolStripMenuItem();
+            this.титовМаксимТимуровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process345vic = new System.Windows.Forms.ToolStripMenuItem();
+            this.рябовИльяВладимировичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseApp = new System.Windows.Forms.TabPage();
             this.closeButton = new System.Windows.Forms.Button();
             this.splitterR = new System.Windows.Forms.Splitter();
-            this.львовЯнМаксимовичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.зиганшинХалильАрамзанзановичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.калашниковАндрейБебровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.романовИльяИгоревичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.серебряковВладимирВасильевичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.тихоновЛевЕгоровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.мухинДанилаАртёмовичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.назарбаевРамильРавилевичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.нурмиеваМиланаАлександроваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.фарраховаЛейсанФазиловнаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.морзовАлександрАлександровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.титовМаксимТимуровичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.рябовИльяВладимировичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainPictureBox = new System.Windows.Forms.PictureBox();
             this.personPicture = new System.Windows.Forms.PictureBox();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.ageLabel = new System.Windows.Forms.Label();
-            this.yearLabel = new System.Windows.Forms.Label();
-            this.placeLabel = new System.Windows.Forms.Label();
-            this.processLabel = new System.Windows.Forms.Label();
-            this.temp1Label = new System.Windows.Forms.Label();
-            this.temp2Label = new System.Windows.Forms.Label();
+            this.statusLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -108,6 +110,7 @@
             this.Tree.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.CloseApp.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,6 +123,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.Window;
+            this.splitContainer1.Panel1.Controls.Add(this.mainPictureBox);
             this.splitContainer1.Panel1.Controls.Add(this.splitterL);
             this.splitContainer1.Panel1MinSize = 150;
             // 
@@ -249,12 +253,10 @@
             // Process322xml
             // 
             this.Process322xml.AutoSize = true;
-            this.Process322xml.Checked = true;
             this.Process322xml.Location = new System.Drawing.Point(22, 34);
             this.Process322xml.Name = "Process322xml";
             this.Process322xml.Size = new System.Drawing.Size(290, 22);
             this.Process322xml.TabIndex = 0;
-            this.Process322xml.TabStop = true;
             this.Process322xml.Text = "Дело № 322 (загрузка с XML-файла)";
             this.Process322xml.UseVisualStyleBackColor = true;
             this.Process322xml.CheckedChanged += new System.EventHandler(this.Process322xml_CheckedChanged);
@@ -278,6 +280,7 @@
             this.MainList.AllowUserToResizeColumns = false;
             this.MainList.AllowUserToResizeRows = false;
             this.MainList.BackgroundColor = System.Drawing.SystemColors.Window;
+            this.MainList.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MainList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.MainList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MainList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -329,6 +332,7 @@
             // 
             // Tree
             // 
+            this.Tree.Controls.Add(this.statusLabel);
             this.Tree.Controls.Add(this.temp2Label);
             this.Tree.Controls.Add(this.temp1Label);
             this.Tree.Controls.Add(this.processLabel);
@@ -344,6 +348,76 @@
             this.Tree.TabIndex = 3;
             this.Tree.Text = "Показать древо";
             this.Tree.UseVisualStyleBackColor = true;
+            // 
+            // temp2Label
+            // 
+            this.temp2Label.AutoSize = true;
+            this.temp2Label.Location = new System.Drawing.Point(3, 322);
+            this.temp2Label.Name = "temp2Label";
+            this.temp2Label.Size = new System.Drawing.Size(48, 18);
+            this.temp2Label.TabIndex = 8;
+            this.temp2Label.Text = "temp2";
+            this.temp2Label.Visible = false;
+            // 
+            // temp1Label
+            // 
+            this.temp1Label.AutoSize = true;
+            this.temp1Label.Location = new System.Drawing.Point(3, 201);
+            this.temp1Label.Name = "temp1Label";
+            this.temp1Label.Size = new System.Drawing.Size(48, 18);
+            this.temp1Label.TabIndex = 7;
+            this.temp1Label.Text = "temp1";
+            this.temp1Label.Visible = false;
+            // 
+            // processLabel
+            // 
+            this.processLabel.AutoSize = true;
+            this.processLabel.Location = new System.Drawing.Point(3, 148);
+            this.processLabel.Name = "processLabel";
+            this.processLabel.Size = new System.Drawing.Size(64, 18);
+            this.processLabel.TabIndex = 6;
+            this.processLabel.Text = "process";
+            this.processLabel.Visible = false;
+            // 
+            // placeLabel
+            // 
+            this.placeLabel.AutoSize = true;
+            this.placeLabel.Location = new System.Drawing.Point(3, 261);
+            this.placeLabel.Name = "placeLabel";
+            this.placeLabel.Size = new System.Drawing.Size(48, 18);
+            this.placeLabel.TabIndex = 5;
+            this.placeLabel.Text = "place";
+            this.placeLabel.Visible = false;
+            // 
+            // yearLabel
+            // 
+            this.yearLabel.AutoSize = true;
+            this.yearLabel.Location = new System.Drawing.Point(307, 88);
+            this.yearLabel.Name = "yearLabel";
+            this.yearLabel.Size = new System.Drawing.Size(40, 18);
+            this.yearLabel.TabIndex = 4;
+            this.yearLabel.Text = "year";
+            this.yearLabel.Visible = false;
+            // 
+            // ageLabel
+            // 
+            this.ageLabel.AutoSize = true;
+            this.ageLabel.Location = new System.Drawing.Point(129, 88);
+            this.ageLabel.Name = "ageLabel";
+            this.ageLabel.Size = new System.Drawing.Size(32, 18);
+            this.ageLabel.TabIndex = 3;
+            this.ageLabel.Text = "age";
+            this.ageLabel.Visible = false;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(129, 24);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(40, 18);
+            this.nameLabel.TabIndex = 2;
+            this.nameLabel.Text = "name";
+            this.nameLabel.Visible = false;
             // 
             // menuStrip1
             // 
@@ -375,7 +449,7 @@
             this.process322jud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ивановИванИвановичToolStripMenuItem});
             this.process322jud.Name = "process322jud";
-            this.process322jud.Size = new System.Drawing.Size(180, 22);
+            this.process322jud.Size = new System.Drawing.Size(145, 22);
             this.process322jud.Text = "Дело№322";
             // 
             // ивановИванИвановичToolStripMenuItem
@@ -383,13 +457,14 @@
             this.ивановИванИвановичToolStripMenuItem.Name = "ивановИванИвановичToolStripMenuItem";
             this.ивановИванИвановичToolStripMenuItem.Size = new System.Drawing.Size(204, 22);
             this.ивановИванИвановичToolStripMenuItem.Text = "Иванов Иван Иванович";
+            this.ивановИванИвановичToolStripMenuItem.Click += new System.EventHandler(this.ИвановИванИвановичToolStripMenuItem_Click);
             // 
             // process228jud
             // 
             this.process228jud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.амирхановИльяToolStripMenuItem});
             this.process228jud.Name = "process228jud";
-            this.process228jud.Size = new System.Drawing.Size(180, 22);
+            this.process228jud.Size = new System.Drawing.Size(145, 22);
             this.process228jud.Text = "Дело№228";
             // 
             // амирхановИльяToolStripMenuItem
@@ -397,13 +472,14 @@
             this.амирхановИльяToolStripMenuItem.Name = "амирхановИльяToolStripMenuItem";
             this.амирхановИльяToolStripMenuItem.Size = new System.Drawing.Size(229, 22);
             this.амирхановИльяToolStripMenuItem.Text = "Амирханов Илья Сергеевич";
+            this.амирхановИльяToolStripMenuItem.Click += new System.EventHandler(this.АмирхановИльяToolStripMenuItem_Click);
             // 
             // process123jud
             // 
             this.process123jud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.фроловЮрийМаратовичToolStripMenuItem});
             this.process123jud.Name = "process123jud";
-            this.process123jud.Size = new System.Drawing.Size(180, 22);
+            this.process123jud.Size = new System.Drawing.Size(145, 22);
             this.process123jud.Text = "Дело№123";
             // 
             // фроловЮрийМаратовичToolStripMenuItem
@@ -411,13 +487,14 @@
             this.фроловЮрийМаратовичToolStripMenuItem.Name = "фроловЮрийМаратовичToolStripMenuItem";
             this.фроловЮрийМаратовичToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.фроловЮрийМаратовичToolStripMenuItem.Text = "Фролов Юрий Маратович";
+            this.фроловЮрийМаратовичToolStripMenuItem.Click += new System.EventHandler(this.ФроловЮрийМаратовичToolStripMenuItem_Click);
             // 
             // process18223jud
             // 
             this.process18223jud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.гусевМихаилМихайловичToolStripMenuItem});
             this.process18223jud.Name = "process18223jud";
-            this.process18223jud.Size = new System.Drawing.Size(180, 22);
+            this.process18223jud.Size = new System.Drawing.Size(145, 22);
             this.process18223jud.Text = "Дело№18223";
             // 
             // гусевМихаилМихайловичToolStripMenuItem
@@ -425,13 +502,14 @@
             this.гусевМихаилМихайловичToolStripMenuItem.Name = "гусевМихаилМихайловичToolStripMenuItem";
             this.гусевМихаилМихайловичToolStripMenuItem.Size = new System.Drawing.Size(225, 22);
             this.гусевМихаилМихайловичToolStripMenuItem.Text = "Гусев Михаил Михайлович";
+            this.гусевМихаилМихайловичToolStripMenuItem.Click += new System.EventHandler(this.ГусевМихаилМихайловичToolStripMenuItem_Click);
             // 
             // process1234jud
             // 
             this.process1234jud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.комиссаровЛевМихайловичToolStripMenuItem});
             this.process1234jud.Name = "process1234jud";
-            this.process1234jud.Size = new System.Drawing.Size(180, 22);
+            this.process1234jud.Size = new System.Drawing.Size(145, 22);
             this.process1234jud.Text = "Дело№1234";
             // 
             // комиссаровЛевМихайловичToolStripMenuItem
@@ -439,14 +517,22 @@
             this.комиссаровЛевМихайловичToolStripMenuItem.Name = "комиссаровЛевМихайловичToolStripMenuItem";
             this.комиссаровЛевМихайловичToolStripMenuItem.Size = new System.Drawing.Size(253, 22);
             this.комиссаровЛевМихайловичToolStripMenuItem.Text = "Комиссаров Лев Владиславович";
+            this.комиссаровЛевМихайловичToolStripMenuItem.Click += new System.EventHandler(this.КомиссаровЛевМихайловичToolStripMenuItem_Click);
             // 
             // process345jud
             // 
             this.process345jud.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.львовЯнМаксимовичToolStripMenuItem});
             this.process345jud.Name = "process345jud";
-            this.process345jud.Size = new System.Drawing.Size(180, 22);
+            this.process345jud.Size = new System.Drawing.Size(145, 22);
             this.process345jud.Text = "Дело№345";
+            // 
+            // львовЯнМаксимовичToolStripMenuItem
+            // 
+            this.львовЯнМаксимовичToolStripMenuItem.Name = "львовЯнМаксимовичToolStripMenuItem";
+            this.львовЯнМаксимовичToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.львовЯнМаксимовичToolStripMenuItem.Text = "Львов Ян Максимович";
+            this.львовЯнМаксимовичToolStripMenuItem.Click += new System.EventHandler(this.ЛьвовЯнМаксимовичToolStripMenuItem_Click);
             // 
             // подозреваемыеToolStripMenuItem
             // 
@@ -466,48 +552,90 @@
             this.process322def.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.зиганшинХалильАрамзанзановичToolStripMenuItem});
             this.process322def.Name = "process322def";
-            this.process322def.Size = new System.Drawing.Size(180, 22);
+            this.process322def.Size = new System.Drawing.Size(145, 22);
             this.process322def.Text = "Дело№322";
+            // 
+            // зиганшинХалильАрамзанзановичToolStripMenuItem
+            // 
+            this.зиганшинХалильАрамзанзановичToolStripMenuItem.Name = "зиганшинХалильАрамзанзановичToolStripMenuItem";
+            this.зиганшинХалильАрамзанзановичToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
+            this.зиганшинХалильАрамзанзановичToolStripMenuItem.Text = "Зиганшин Халиль Арамзанзанович";
+            this.зиганшинХалильАрамзанзановичToolStripMenuItem.Click += new System.EventHandler(this.ЗиганшинХалильАрамзанзановичToolStripMenuItem_Click);
             // 
             // process228def
             // 
             this.process228def.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.калашниковАндрейБебровичToolStripMenuItem});
             this.process228def.Name = "process228def";
-            this.process228def.Size = new System.Drawing.Size(180, 22);
+            this.process228def.Size = new System.Drawing.Size(145, 22);
             this.process228def.Text = "Дело№228";
+            // 
+            // калашниковАндрейБебровичToolStripMenuItem
+            // 
+            this.калашниковАндрейБебровичToolStripMenuItem.Name = "калашниковАндрейБебровичToolStripMenuItem";
+            this.калашниковАндрейБебровичToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
+            this.калашниковАндрейБебровичToolStripMenuItem.Text = "Калашников Андрей Бебрович";
+            this.калашниковАндрейБебровичToolStripMenuItem.Click += new System.EventHandler(this.КалашниковАндрейБебровичToolStripMenuItem_Click);
             // 
             // process123def
             // 
             this.process123def.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.романовИльяИгоревичToolStripMenuItem});
             this.process123def.Name = "process123def";
-            this.process123def.Size = new System.Drawing.Size(180, 22);
+            this.process123def.Size = new System.Drawing.Size(145, 22);
             this.process123def.Text = "Дело№123";
+            // 
+            // романовИльяИгоревичToolStripMenuItem
+            // 
+            this.романовИльяИгоревичToolStripMenuItem.Name = "романовИльяИгоревичToolStripMenuItem";
+            this.романовИльяИгоревичToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.романовИльяИгоревичToolStripMenuItem.Text = "Романов Илья Игоревич";
+            this.романовИльяИгоревичToolStripMenuItem.Click += new System.EventHandler(this.РомановИльяИгоревичToolStripMenuItem_Click);
             // 
             // process18223def
             // 
             this.process18223def.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.серебряковВладимирВасильевичToolStripMenuItem});
             this.process18223def.Name = "process18223def";
-            this.process18223def.Size = new System.Drawing.Size(180, 22);
+            this.process18223def.Size = new System.Drawing.Size(145, 22);
             this.process18223def.Text = "Дело№18223";
+            // 
+            // серебряковВладимирВасильевичToolStripMenuItem
+            // 
+            this.серебряковВладимирВасильевичToolStripMenuItem.Name = "серебряковВладимирВасильевичToolStripMenuItem";
+            this.серебряковВладимирВасильевичToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
+            this.серебряковВладимирВасильевичToolStripMenuItem.Text = "Серебряков Савелий Владимирович";
+            this.серебряковВладимирВасильевичToolStripMenuItem.Click += new System.EventHandler(this.СеребряковВладимирВасильевичToolStripMenuItem_Click);
             // 
             // process1234def
             // 
             this.process1234def.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.тихоновЛевЕгоровичToolStripMenuItem});
             this.process1234def.Name = "process1234def";
-            this.process1234def.Size = new System.Drawing.Size(180, 22);
+            this.process1234def.Size = new System.Drawing.Size(145, 22);
             this.process1234def.Text = "Дело№1234";
+            // 
+            // тихоновЛевЕгоровичToolStripMenuItem
+            // 
+            this.тихоновЛевЕгоровичToolStripMenuItem.Name = "тихоновЛевЕгоровичToolStripMenuItem";
+            this.тихоновЛевЕгоровичToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.тихоновЛевЕгоровичToolStripMenuItem.Text = "Тихонов Лев Егорович";
+            this.тихоновЛевЕгоровичToolStripMenuItem.Click += new System.EventHandler(this.ТихоновЛевЕгоровичToolStripMenuItem_Click);
             // 
             // process345def
             // 
             this.process345def.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.мухинДанилаАртёмовичToolStripMenuItem});
             this.process345def.Name = "process345def";
-            this.process345def.Size = new System.Drawing.Size(180, 22);
+            this.process345def.Size = new System.Drawing.Size(145, 22);
             this.process345def.Text = "Дело№345";
+            // 
+            // мухинДанилаАртёмовичToolStripMenuItem
+            // 
+            this.мухинДанилаАртёмовичToolStripMenuItem.Name = "мухинДанилаАртёмовичToolStripMenuItem";
+            this.мухинДанилаАртёмовичToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.мухинДанилаАртёмовичToolStripMenuItem.Text = "Мухин Данила Артёмович";
+            this.мухинДанилаАртёмовичToolStripMenuItem.Click += new System.EventHandler(this.МухинДанилаАртёмовичToolStripMenuItem_Click);
             // 
             // пострадавшиеToolStripMenuItem
             // 
@@ -527,48 +655,90 @@
             this.process322vic.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.назарбаевРамильРавилевичToolStripMenuItem});
             this.process322vic.Name = "process322vic";
-            this.process322vic.Size = new System.Drawing.Size(180, 22);
+            this.process322vic.Size = new System.Drawing.Size(145, 22);
             this.process322vic.Text = "Дело№322";
+            // 
+            // назарбаевРамильРавилевичToolStripMenuItem
+            // 
+            this.назарбаевРамильРавилевичToolStripMenuItem.Name = "назарбаевРамильРавилевичToolStripMenuItem";
+            this.назарбаевРамильРавилевичToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
+            this.назарбаевРамильРавилевичToolStripMenuItem.Text = "Назарбаев Рамиль Равилевич";
+            this.назарбаевРамильРавилевичToolStripMenuItem.Click += new System.EventHandler(this.НазарбаевРамильРавилевичToolStripMenuItem_Click);
             // 
             // process228vic
             // 
             this.process228vic.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.нурмиеваМиланаАлександроваToolStripMenuItem});
             this.process228vic.Name = "process228vic";
-            this.process228vic.Size = new System.Drawing.Size(180, 22);
+            this.process228vic.Size = new System.Drawing.Size(145, 22);
             this.process228vic.Text = "Дело№228";
+            // 
+            // нурмиеваМиланаАлександроваToolStripMenuItem
+            // 
+            this.нурмиеваМиланаАлександроваToolStripMenuItem.Name = "нурмиеваМиланаАлександроваToolStripMenuItem";
+            this.нурмиеваМиланаАлександроваToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
+            this.нурмиеваМиланаАлександроваToolStripMenuItem.Text = "Нурмиева Милана Александрова";
+            this.нурмиеваМиланаАлександроваToolStripMenuItem.Click += new System.EventHandler(this.НурмиеваМиланаАлександроваToolStripMenuItem_Click);
             // 
             // process123vic
             // 
             this.process123vic.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.фарраховаЛейсанФазиловнаToolStripMenuItem});
             this.process123vic.Name = "process123vic";
-            this.process123vic.Size = new System.Drawing.Size(180, 22);
+            this.process123vic.Size = new System.Drawing.Size(145, 22);
             this.process123vic.Text = "Дело№123";
+            // 
+            // фарраховаЛейсанФазиловнаToolStripMenuItem
+            // 
+            this.фарраховаЛейсанФазиловнаToolStripMenuItem.Name = "фарраховаЛейсанФазиловнаToolStripMenuItem";
+            this.фарраховаЛейсанФазиловнаToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
+            this.фарраховаЛейсанФазиловнаToolStripMenuItem.Text = "Фаррахова Лейсан Фазиловна";
+            this.фарраховаЛейсанФазиловнаToolStripMenuItem.Click += new System.EventHandler(this.ФарраховаЛейсанФазиловнаToolStripMenuItem_Click);
             // 
             // process18223vic
             // 
             this.process18223vic.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.морзовАлександрАлександровичToolStripMenuItem});
             this.process18223vic.Name = "process18223vic";
-            this.process18223vic.Size = new System.Drawing.Size(180, 22);
+            this.process18223vic.Size = new System.Drawing.Size(145, 22);
             this.process18223vic.Text = "Дело№18223";
+            // 
+            // морзовАлександрАлександровичToolStripMenuItem
+            // 
+            this.морзовАлександрАлександровичToolStripMenuItem.Name = "морзовАлександрАлександровичToolStripMenuItem";
+            this.морзовАлександрАлександровичToolStripMenuItem.Size = new System.Drawing.Size(275, 22);
+            this.морзовАлександрАлександровичToolStripMenuItem.Text = "Морозов Александр Александрович";
+            this.морзовАлександрАлександровичToolStripMenuItem.Click += new System.EventHandler(this.морзовАлександрАлександровичToolStripMenuItem_Click);
             // 
             // process1234vic
             // 
             this.process1234vic.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.титовМаксимТимуровичToolStripMenuItem});
             this.process1234vic.Name = "process1234vic";
-            this.process1234vic.Size = new System.Drawing.Size(180, 22);
+            this.process1234vic.Size = new System.Drawing.Size(145, 22);
             this.process1234vic.Text = "Дело№1234";
+            // 
+            // титовМаксимТимуровичToolStripMenuItem
+            // 
+            this.титовМаксимТимуровичToolStripMenuItem.Name = "титовМаксимТимуровичToolStripMenuItem";
+            this.титовМаксимТимуровичToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.титовМаксимТимуровичToolStripMenuItem.Text = "Титов Максим Тимурович";
+            this.титовМаксимТимуровичToolStripMenuItem.Click += new System.EventHandler(this.ТитовМаксимТимуровичToolStripMenuItem_Click);
             // 
             // process345vic
             // 
             this.process345vic.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.рябовИльяВладимировичToolStripMenuItem});
             this.process345vic.Name = "process345vic";
-            this.process345vic.Size = new System.Drawing.Size(180, 22);
+            this.process345vic.Size = new System.Drawing.Size(145, 22);
             this.process345vic.Text = "Дело№345";
+            // 
+            // рябовИльяВладимировичToolStripMenuItem
+            // 
+            this.рябовИльяВладимировичToolStripMenuItem.Name = "рябовИльяВладимировичToolStripMenuItem";
+            this.рябовИльяВладимировичToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.рябовИльяВладимировичToolStripMenuItem.Text = "Рябов Илья Владимирович";
+            this.рябовИльяВладимировичToolStripMenuItem.Click += new System.EventHandler(this.РябовИльяВладимировичToolStripMenuItem_Click);
             // 
             // CloseApp
             // 
@@ -602,163 +772,35 @@
             this.splitterR.TabIndex = 0;
             this.splitterR.TabStop = false;
             // 
-            // львовЯнМаксимовичToolStripMenuItem
+            // mainPictureBox
             // 
-            this.львовЯнМаксимовичToolStripMenuItem.Name = "львовЯнМаксимовичToolStripMenuItem";
-            this.львовЯнМаксимовичToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.львовЯнМаксимовичToolStripMenuItem.Text = "Львов Ян Максимович";
-            // 
-            // зиганшинХалильАрамзанзановичToolStripMenuItem
-            // 
-            this.зиганшинХалильАрамзанзановичToolStripMenuItem.Name = "зиганшинХалильАрамзанзановичToolStripMenuItem";
-            this.зиганшинХалильАрамзанзановичToolStripMenuItem.Size = new System.Drawing.Size(270, 22);
-            this.зиганшинХалильАрамзанзановичToolStripMenuItem.Text = "Зиганшин Халиль Арамзанзанович";
-            // 
-            // калашниковАндрейБебровичToolStripMenuItem
-            // 
-            this.калашниковАндрейБебровичToolStripMenuItem.Name = "калашниковАндрейБебровичToolStripMenuItem";
-            this.калашниковАндрейБебровичToolStripMenuItem.Size = new System.Drawing.Size(245, 22);
-            this.калашниковАндрейБебровичToolStripMenuItem.Text = "Калашников Андрей Бебрович";
-            // 
-            // романовИльяИгоревичToolStripMenuItem
-            // 
-            this.романовИльяИгоревичToolStripMenuItem.Name = "романовИльяИгоревичToolStripMenuItem";
-            this.романовИльяИгоревичToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.романовИльяИгоревичToolStripMenuItem.Text = "Романов Илья Игоревич";
-            // 
-            // серебряковВладимирВасильевичToolStripMenuItem
-            // 
-            this.серебряковВладимирВасильевичToolStripMenuItem.Name = "серебряковВладимирВасильевичToolStripMenuItem";
-            this.серебряковВладимирВасильевичToolStripMenuItem.Size = new System.Drawing.Size(276, 22);
-            this.серебряковВладимирВасильевичToolStripMenuItem.Text = "Серебряков Савелий Владимирович";
-            // 
-            // тихоновЛевЕгоровичToolStripMenuItem
-            // 
-            this.тихоновЛевЕгоровичToolStripMenuItem.Name = "тихоновЛевЕгоровичToolStripMenuItem";
-            this.тихоновЛевЕгоровичToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.тихоновЛевЕгоровичToolStripMenuItem.Text = "Тихонов Лев Егорович";
-            // 
-            // мухинДанилаАртёмовичToolStripMenuItem
-            // 
-            this.мухинДанилаАртёмовичToolStripMenuItem.Name = "мухинДанилаАртёмовичToolStripMenuItem";
-            this.мухинДанилаАртёмовичToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
-            this.мухинДанилаАртёмовичToolStripMenuItem.Text = "Мухин Данила Артёмович";
-            // 
-            // назарбаевРамильРавилевичToolStripMenuItem
-            // 
-            this.назарбаевРамильРавилевичToolStripMenuItem.Name = "назарбаевРамильРавилевичToolStripMenuItem";
-            this.назарбаевРамильРавилевичToolStripMenuItem.Size = new System.Drawing.Size(239, 22);
-            this.назарбаевРамильРавилевичToolStripMenuItem.Text = "Назарбаев Рамиль Равилевич";
-            // 
-            // нурмиеваМиланаАлександроваToolStripMenuItem
-            // 
-            this.нурмиеваМиланаАлександроваToolStripMenuItem.Name = "нурмиеваМиланаАлександроваToolStripMenuItem";
-            this.нурмиеваМиланаАлександроваToolStripMenuItem.Size = new System.Drawing.Size(258, 22);
-            this.нурмиеваМиланаАлександроваToolStripMenuItem.Text = "Нурмиева Милана Александрова";
-            // 
-            // фарраховаЛейсанФазиловнаToolStripMenuItem
-            // 
-            this.фарраховаЛейсанФазиловнаToolStripMenuItem.Name = "фарраховаЛейсанФазиловнаToolStripMenuItem";
-            this.фарраховаЛейсанФазиловнаToolStripMenuItem.Size = new System.Drawing.Size(240, 22);
-            this.фарраховаЛейсанФазиловнаToolStripMenuItem.Text = "Фаррахова Лейсан Фазиловна";
-            // 
-            // морзовАлександрАлександровичToolStripMenuItem
-            // 
-            this.морзовАлександрАлександровичToolStripMenuItem.Name = "морзовАлександрАлександровичToolStripMenuItem";
-            this.морзовАлександрАлександровичToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.морзовАлександрАлександровичToolStripMenuItem.Text = "Морзов Александр Александрович";
-            // 
-            // титовМаксимТимуровичToolStripMenuItem
-            // 
-            this.титовМаксимТимуровичToolStripMenuItem.Name = "титовМаксимТимуровичToolStripMenuItem";
-            this.титовМаксимТимуровичToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.титовМаксимТимуровичToolStripMenuItem.Text = "Титов Максим Тимурович";
-            // 
-            // рябовИльяВладимировичToolStripMenuItem
-            // 
-            this.рябовИльяВладимировичToolStripMenuItem.Name = "рябовИльяВладимировичToolStripMenuItem";
-            this.рябовИльяВладимировичToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.рябовИльяВладимировичToolStripMenuItem.Text = "Рябов Илья Владимирович";
+            this.mainPictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.mainPictureBox.Image = global::XML_JSON_project.Properties.Resources.icons8_scales_100;
+            this.mainPictureBox.Location = new System.Drawing.Point(45, 37);
+            this.mainPictureBox.Name = "mainPictureBox";
+            this.mainPictureBox.Size = new System.Drawing.Size(100, 100);
+            this.mainPictureBox.TabIndex = 1;
+            this.mainPictureBox.TabStop = false;
             // 
             // personPicture
             // 
             this.personPicture.Image = global::XML_JSON_project.Properties.Resources.icons8_user_account_100;
-            this.personPicture.Location = new System.Drawing.Point(3, 27);
+            this.personPicture.Location = new System.Drawing.Point(0, 24);
             this.personPicture.Name = "personPicture";
             this.personPicture.Size = new System.Drawing.Size(100, 100);
             this.personPicture.TabIndex = 1;
             this.personPicture.TabStop = false;
             this.personPicture.Visible = false;
             // 
-            // nameLabel
+            // statusLabel
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(121, 28);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(40, 18);
-            this.nameLabel.TabIndex = 2;
-            this.nameLabel.Text = "name";
-            this.nameLabel.Visible = false;
-            // 
-            // ageLabel
-            // 
-            this.ageLabel.AutoSize = true;
-            this.ageLabel.Location = new System.Drawing.Point(121, 68);
-            this.ageLabel.Name = "ageLabel";
-            this.ageLabel.Size = new System.Drawing.Size(32, 18);
-            this.ageLabel.TabIndex = 3;
-            this.ageLabel.Text = "age";
-            this.ageLabel.Visible = false;
-            // 
-            // yearLabel
-            // 
-            this.yearLabel.AutoSize = true;
-            this.yearLabel.Location = new System.Drawing.Point(226, 68);
-            this.yearLabel.Name = "yearLabel";
-            this.yearLabel.Size = new System.Drawing.Size(40, 18);
-            this.yearLabel.TabIndex = 4;
-            this.yearLabel.Text = "year";
-            this.yearLabel.Visible = false;
-            // 
-            // placeLabel
-            // 
-            this.placeLabel.AutoSize = true;
-            this.placeLabel.Location = new System.Drawing.Point(121, 109);
-            this.placeLabel.Name = "placeLabel";
-            this.placeLabel.Size = new System.Drawing.Size(48, 18);
-            this.placeLabel.TabIndex = 5;
-            this.placeLabel.Text = "place";
-            this.placeLabel.Visible = false;
-            // 
-            // processLabel
-            // 
-            this.processLabel.AutoSize = true;
-            this.processLabel.Location = new System.Drawing.Point(3, 148);
-            this.processLabel.Name = "processLabel";
-            this.processLabel.Size = new System.Drawing.Size(64, 18);
-            this.processLabel.TabIndex = 6;
-            this.processLabel.Text = "process";
-            this.processLabel.Visible = false;
-            // 
-            // temp1Label
-            // 
-            this.temp1Label.AutoSize = true;
-            this.temp1Label.Location = new System.Drawing.Point(3, 185);
-            this.temp1Label.Name = "temp1Label";
-            this.temp1Label.Size = new System.Drawing.Size(48, 18);
-            this.temp1Label.TabIndex = 7;
-            this.temp1Label.Text = "temp1";
-            this.temp1Label.Visible = false;
-            // 
-            // temp2Label
-            // 
-            this.temp2Label.AutoSize = true;
-            this.temp2Label.Location = new System.Drawing.Point(3, 219);
-            this.temp2Label.Name = "temp2Label";
-            this.temp2Label.Size = new System.Drawing.Size(48, 18);
-            this.temp2Label.TabIndex = 8;
-            this.temp2Label.Text = "temp2";
-            this.temp2Label.Visible = false;
+            this.statusLabel.AutoSize = true;
+            this.statusLabel.Location = new System.Drawing.Point(105, 148);
+            this.statusLabel.Name = "statusLabel";
+            this.statusLabel.Size = new System.Drawing.Size(56, 18);
+            this.statusLabel.TabIndex = 9;
+            this.statusLabel.Text = "status";
+            this.statusLabel.Visible = false;
             // 
             // MainForm
             // 
@@ -787,6 +829,7 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.CloseApp.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personPicture)).EndInit();
             this.ResumeLayout(false);
 
@@ -863,6 +906,8 @@
         private System.Windows.Forms.Label ageLabel;
         private System.Windows.Forms.Label nameLabel;
         private System.Windows.Forms.PictureBox personPicture;
+        private System.Windows.Forms.PictureBox mainPictureBox;
+        private System.Windows.Forms.Label statusLabel;
     }
 }
 

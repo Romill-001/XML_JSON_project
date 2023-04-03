@@ -233,7 +233,7 @@ namespace XML_JSON_project
                     MainList.Rows[i].Visible = MainList[3, i].Value.ToString() == process;
                 }
                 MainList.Show();
-                MessageBox.Show($"Данные по делу {process} успешно загружены", "Система", MessageBoxButtons.OK) ;
+                MessageBox.Show($"Данные по делу {process} успешно загружены", "Система", MessageBoxButtons.OK);
             }
             else
             {
@@ -304,6 +304,129 @@ namespace XML_JSON_project
         private void closeButton_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        private void SetTree(string str)
+        {
+            nameLabel.Visible = true;
+            ageLabel.Visible = true;
+            yearLabel.Visible = true;
+            placeLabel.Visible = true;
+            processLabel.Visible = true;
+            temp1Label.Visible = true;
+            personPicture.Visible = true;
+            statusLabel.Visible = true;
+            People pers = List.Find(per => per.Name.Contains(str));
+            nameLabel.Text = $"Имя: {pers.Name}";
+            ageLabel.Text = $"Возраст: {pers.Age}";
+            yearLabel.Text = $"Год рождения: {pers.Year}";
+            placeLabel.Text = $"Местро проведения: {pers.Place}";
+            processLabel.Text = $"Дело №{pers.Process}";
+            statusLabel.Text = $"Статус: {pers.Status}";
+            if (pers.Experience != 0)
+            {
+                temp1Label.Text = $"Опыт работы: {pers.Experience}";
+                temp1Label.Visible = true;
+                temp2Label.Visible = false;
+            }
+            else if (pers.Lawyer != null && pers.Article != 0)
+            {
+                temp1Label.Text = $"Статья: {pers.Article}";
+                temp1Label.Visible = true;
+                temp2Label.Text = $"Адвокат: {pers.Lawyer}";
+                temp2Label.Visible = true;
+            }
+            else if (pers.Damage != null)
+            {
+                temp1Label.Text = $"Ущерб: {pers.Damage}";
+                temp1Label.Visible = true;
+                temp2Label.Visible = false;
+            }
+        }
+        private void ИвановИванИвановичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Иванов");
+        }
+
+        private void АмирхановИльяToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Амирханов");
+        }
+
+        private void ФроловЮрийМаратовичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Фролов");
+        }
+
+        private void ГусевМихаилМихайловичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Гусев");
+        }
+
+        private void КомиссаровЛевМихайловичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Комисcаров");
+        }
+
+        private void ЛьвовЯнМаксимовичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Львов");
+        }
+
+        private void ЗиганшинХалильАрамзанзановичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Зиганшин");
+        }
+        private void КалашниковАндрейБебровичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Калашников");
+        }
+        private void РомановИльяИгоревичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Романов");
+        }
+
+        private void СеребряковВладимирВасильевичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Серебряков");
+        }
+
+        private void ТихоновЛевЕгоровичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Тихонов");
+        }
+
+        private void МухинДанилаАртёмовичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Мухин");
+        }
+
+        private void НазарбаевРамильРавилевичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Назарбаев");
+        }
+
+        private void НурмиеваМиланаАлександроваToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Нурмиева");
+        }
+
+        private void ФарраховаЛейсанФазиловнаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Фаррахова");
+        }
+
+        private void морзовАлександрАлександровичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Морозов");
+        }
+        private void ТитовМаксимТимуровичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Титов");
+        }
+
+        private void РябовИльяВладимировичToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetTree("Рябов");
         }
     }
 
