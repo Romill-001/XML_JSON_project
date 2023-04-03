@@ -53,7 +53,7 @@
             this.yearLabel = new System.Windows.Forms.Label();
             this.ageLabel = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MainMenu = new System.Windows.Forms.MenuStrip();
             this.судьиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.process322jud = new System.Windows.Forms.ToolStripMenuItem();
             this.ивановИванИвановичToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,7 +108,7 @@
             this.ShowInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainList)).BeginInit();
             this.Tree.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.MainMenu.SuspendLayout();
             this.CloseApp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.personPicture)).BeginInit();
@@ -138,7 +138,7 @@
             // 
             // splitterL
             // 
-            this.splitterL.BackColor = System.Drawing.Color.Lime;
+            this.splitterL.BackColor = System.Drawing.Color.PaleTurquoise;
             this.splitterL.Dock = System.Windows.Forms.DockStyle.Right;
             this.splitterL.Enabled = false;
             this.splitterL.Location = new System.Drawing.Point(190, 0);
@@ -341,7 +341,7 @@
             this.Tree.Controls.Add(this.ageLabel);
             this.Tree.Controls.Add(this.nameLabel);
             this.Tree.Controls.Add(this.personPicture);
-            this.Tree.Controls.Add(this.menuStrip1);
+            this.Tree.Controls.Add(this.MainMenu);
             this.Tree.Location = new System.Drawing.Point(4, 34);
             this.Tree.Name = "Tree";
             this.Tree.Size = new System.Drawing.Size(590, 397);
@@ -419,17 +419,17 @@
             this.nameLabel.Text = "name";
             this.nameLabel.Visible = false;
             // 
-            // menuStrip1
+            // MainMenu
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.судьиToolStripMenuItem,
             this.подозреваемыеToolStripMenuItem,
             this.пострадавшиеToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(590, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.MainMenu.Location = new System.Drawing.Point(0, 0);
+            this.MainMenu.Name = "MainMenu";
+            this.MainMenu.Size = new System.Drawing.Size(590, 24);
+            this.MainMenu.TabIndex = 0;
+            this.MainMenu.Text = "menuStrip1";
             // 
             // судьиToolStripMenuItem
             // 
@@ -764,7 +764,7 @@
             // 
             // splitterR
             // 
-            this.splitterR.BackColor = System.Drawing.Color.MediumOrchid;
+            this.splitterR.BackColor = System.Drawing.Color.Plum;
             this.splitterR.Enabled = false;
             this.splitterR.Location = new System.Drawing.Point(0, 0);
             this.splitterR.Name = "splitterR";
@@ -809,7 +809,7 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(809, 441);
             this.Controls.Add(this.splitContainer1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.MainMenu;
             this.MaximumSize = new System.Drawing.Size(825, 480);
             this.MinimumSize = new System.Drawing.Size(825, 480);
             this.Name = "MainForm";
@@ -826,8 +826,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.MainList)).EndInit();
             this.Tree.ResumeLayout(false);
             this.Tree.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MainMenu.ResumeLayout(false);
+            this.MainMenu.PerformLayout();
             this.CloseApp.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.mainPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.personPicture)).EndInit();
@@ -858,7 +858,7 @@
         private System.Windows.Forms.Button ConfirmButton;
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.TabPage Tree;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MainMenu;
         private System.Windows.Forms.ToolStripMenuItem судьиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem подозреваемыеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem пострадавшиеToolStripMenuItem;
