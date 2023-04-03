@@ -4,7 +4,7 @@
   
   ![image](https://user-images.githubusercontent.com/112769189/229632139-f784cdfd-d89a-4914-ab8f-79b14f85c924.png)
 ***
-* При выборе же дела в списке будут находиться только люди, учавствующие в это деле: 
+* При выборе же дела, в списке будут находиться **ТОЛЬКО** те люди, которые учавствуют в этом деле: 
   
   ![image](https://user-images.githubusercontent.com/112769189/229634866-25b55a08-408b-451e-b8da-cb47afe5ff21.png)![image](https://user-images.githubusercontent.com/112769189/229634927-dd0e85b4-941c-486b-b1e4-7f2c7c79545d.png)
 ***
